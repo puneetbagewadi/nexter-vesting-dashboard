@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-front-gradient {
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fff, #4527B3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fff, #4527B3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-yellow-gradient {
+    background: -webkit-linear-gradient(-70deg,#F87171,#FBBF24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+
+}
+
+.text-indigo-gradient {
+    background: -webkit-linear-gradient(-70deg,#004e92,#000428);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+}
+
+.bg-yellow-gradient {
+    background: -webkit-linear-gradient(70deg,#F87171,#FBBF24);
+    background: linear-gradient(70deg,#F87171,#FBBF24); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-yellow-gradient:hover {
+    background: -webkit-linear-gradient(-70deg,#F87171,#FBBF24);
+    background: linear-gradient(-70deg,#F87171,#FBBF24); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+input:read-only {
+  @apply bg-gray-100;
+  @apply focus:ring-0;
+  @apply focus:border-gray-300;
+  @apply cursor-default
+}

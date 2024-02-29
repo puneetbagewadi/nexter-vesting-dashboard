@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Nexter",
+    "logo_url": "/images/partners/nexter_logo.svg",
+    "subtitle": "",
+    "staking_networks": [],
+    "investor": true,
+    "token_details": {
+      "token_name": "Nexter",
+      "token_ticker": "NXT",
+      "token_address_eth": "",
+      "token_address_sepolia": "0x32860C49C6abB7E699339ebCc2A47D97B6589DC8"
+    }
+  }
+]
