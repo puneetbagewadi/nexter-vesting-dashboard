@@ -191,6 +191,19 @@
   },
   {
     "inputs": [],
+    "name": "dayDiff",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "nDays",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "getInitialTimestamp",
     "outputs": [
       {
