@@ -2,7 +2,7 @@ import { CHAIN_ID } from "../constants";
 
 export const projectDetails = {
   BENEFICIARY_ADDRESS: "0xC160430d341B2B41F40BDfa6D1bb5419f6959566",
-  INVESTOR_DISTRIBUTION_ADDRESS: "",
+  INVESTOR_DISTRIBUTION_ADDRESS: "0x614Bb773d3cDD0C4063d72BF10cC3ECC29f51Afb",
   VESTING_CONTRACT_ADDRESS: "0xaD7a42dF2DA3bB2D59Be16beACa426F7bFa99265",
   distributionType: [
     "SEED",
@@ -31,7 +31,7 @@ export const projectDetails = {
   },
   explorerUrl: "https://bscscan.com",
   tokenByNetwork: {
-    [CHAIN_ID.BSC_TESTNET]: {
+    [CHAIN_ID.SEPOLIA]: {
       address: "0x32860C49C6abB7E699339ebCc2A47D97B6589DC8",
       name: "Nexter",
       symbol: "NXT",

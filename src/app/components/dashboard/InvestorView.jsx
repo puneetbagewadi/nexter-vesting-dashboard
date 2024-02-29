@@ -20,7 +20,7 @@ function InvestorView() {
           </div>
         </div>
 
-        {/* {noOfDays != null ? (
+        {noOfDays != null ? (
           <div>Day : {noOfDays}</div>
         ) : (
           <div className="flex items-center justify-center">
@@ -28,9 +28,11 @@ function InvestorView() {
               <span className="absolute inline-flex w-full h-full bg-green-600 rounded-full opacity-75 animate-ping"></span>
               <span className="relative inline-flex w-2 h-2 bg-green-600 rounded-full"></span>
             </span>
-            <span className="pl-2">Claiming is live. Connect to BSC Network to check your eligibility</span>
+            <span className="pl-2">
+              Claiming is live. Connect to ETH Network to check your eligibility
+            </span>
           </div>
-        )} */}
+        )}
 
         {active && (
           <div>

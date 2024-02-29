@@ -20,7 +20,7 @@ export const NETWORK_LABELS = {
   [CHAIN_ID.MUMBAI]: "Mumbai",
 };
 
-export const TESTNET_CHAIN_ID = [CHAIN_ID.BSC_TESTNET];
+export const TESTNET_CHAIN_ID = [CHAIN_ID.SEPOLIA];
 // export const NETWORKS = {
 //   [CHAIN_ID.MAINNET]: {
 //     name: NETWORK_LABELS[CHAIN_ID.MAINNET],
