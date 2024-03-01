@@ -2,8 +2,8 @@ import { CHAIN_ID } from "../constants";
 
 export const projectDetails = {
   BENEFICIARY_ADDRESS: "0xC160430d341B2B41F40BDfa6D1bb5419f6959566",
-  INVESTOR_DISTRIBUTION_ADDRESS: "0x614Bb773d3cDD0C4063d72BF10cC3ECC29f51Afb",
-  VESTING_CONTRACT_ADDRESS: "0xaD7a42dF2DA3bB2D59Be16beACa426F7bFa99265",
+  INVESTOR_DISTRIBUTION_ADDRESS: "0x39c57f6f0ad10c3E26b15Bd2baF4Bb11377FCa34",
+  VESTING_CONTRACT_ADDRESS: "0x72f9626e7336713E13F7b58f3D3Bcb6ce7B717F2",
   distributionType: [
     "SEED",
     "PRIVATE",
@@ -13,12 +13,6 @@ export const projectDetails = {
     "ADVISOR",
   ],
   allocationType: [
-    "SEED",
-    "PRIVATE",
-    "PRIVATE_KOL",
-    "PUBLIC",
-    "TEAM",
-    "ADVISOR",
     "MARKETING",
     "STAKING",
     "ECOSYSTEM",

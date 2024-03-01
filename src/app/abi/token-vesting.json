@@ -98,6 +98,32 @@
     "type": "event"
   },
   {
+    "inputs": [],
+    "name": "_initialTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_nexterToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "enum NexterTokenVesting.DistributionType",
@@ -120,6 +146,11 @@
       {
         "internalType": "uint256",
         "name": "tokensAllotment",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tgeTokens",
         "type": "uint256"
       },
       {
@@ -164,6 +195,19 @@
       {
         "internalType": "uint256",
         "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWithdrawableTokens",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokens",
         "type": "uint256"
       }
     ],
@@ -238,6 +282,25 @@
     "inputs": [
       {
         "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "tokenReceived",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "newOwner",
         "type": "address"
       }
@@ -251,11 +314,18 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_distributionType",
+        "name": "_timestamp",
         "type": "uint256"
       }
     ],
-    "name": "withdrawTokens",
+    "name": "updateInitialTimestamp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawMonthlyVesting",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

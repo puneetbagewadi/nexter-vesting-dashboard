@@ -44,46 +44,6 @@ export default function WithdrawableTokensInfo() {
         functionName: "withdrawableTokens",
         args: [4],
       },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [5],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [6],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [7],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [8],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [9],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [10],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [11],
-      },
-      {
-        ...wagmiVestingContract,
-        functionName: "withdrawableTokens",
-        args: [12],
-      },
     ],
     cacheOnBlock: false,
     blockTag: "latest",
@@ -145,7 +105,7 @@ export default function WithdrawableTokensInfo() {
                       scope="col"
                       className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                     >
-                      Number of Months
+                      Running Month
                     </th>
                   </tr>
                 </thead>
@@ -164,7 +124,7 @@ export default function WithdrawableTokensInfo() {
                         {timeStampData[0]?.result?.toString()}
                       </td>
                       <td className="px-3 py-4 text-sm text-gray-900 font-noraml whitespace-nowrap">
-                        {timeStampData[1]?.result?.toString()}
+                        {Number(timeStampData[1]?.result?.toString()) + 1}
                       </td>
                     </tr>
                   ))}

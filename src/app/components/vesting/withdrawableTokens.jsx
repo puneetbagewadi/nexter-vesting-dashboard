@@ -11,6 +11,7 @@ import Button from "../button/button";
 import { fromBase, toBase } from "@/app/utils";
 import { useWeb3React } from "../web3WalletProvider/web3WalletProvider";
 import commaNumber from "comma-number";
+import { redirect } from "next/navigation";
 
 function WithdrawableTokens() {
   const { chainId, account } = useWeb3React();
@@ -68,6 +69,8 @@ function WithdrawableTokens() {
         numberOfMonths: data[2]?.result?.toString(),
         withdrawnTokens: fromBase(data[3]?.result?.toString(), 18),
       };
+      console.log("withdawabaleTokens data: ", data);
+      console.log("withdrawabaleInfo: ", withdrawabaleInfo);
       setWithdrawableTokens(withdrawabaleInfo);
     }
   }, [data, isLoading]);
@@ -111,7 +114,7 @@ function WithdrawableTokens() {
                     scope="col"
                     className="px-3 py-3.5 text-left text-base font-semibold text-gray-900"
                   >
-                    Number of Months
+                    Running Month
                   </th>
                   <th
                     scope="col"
@@ -133,7 +136,7 @@ function WithdrawableTokens() {
                     {withdrawabaleInfo?.numberOfDays}
                   </td>
                   <td className="px-3 py-4 text-base font-semibold text-gray-500 whitespace-nowrap">
-                    {withdrawabaleInfo?.numberOfMonths}
+                    {Number(withdrawabaleInfo?.numberOfMonths) + 1}
                   </td>
                   <td className="px-3 py-4 text-base font-semibold text-gray-500 whitespace-nowrap">
                     {commaNumber(withdrawabaleInfo?.withdawabaleTokens)}
